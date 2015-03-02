@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:orderingFromXml="true"
+        android:title="Server Settings" >
+        <EditTextPreference
+            android:defaultValue="HeadRest"
+            android:key="servername"
+            android:summary="Enter a friendly name for your server."
+            android:title="Server Name" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:defaultValue="headrest.mrkunkel.com"
+            android:key="serverurl"
+            android:summary="Enter the FQDN of your server."
+            android:title="Server URL" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:defaultValue="80"
+            android:key="serverport"
+            android:summary="Enter the port on which your server runs."
+            android:title="Server Port" >
+        </EditTextPreference>
+
+        <CheckBoxPreference
+            android:key="usessl"
+            android:summary="Does your server use SSL?"
+            android:title="Use HTTPS" >
+        </CheckBoxPreference>
+
+        <EditTextPreference
+            android:defaultValue="headrest"
+            android:key="username"
+            android:summary="Enter your username."
+            android:title="User Name" >
+        </EditTextPreference>
+        <EditTextPreference
+            android:defaultValue="password"
+            android:key="password"
+            android:password="true"
+            android:shouldDisableView="true"
+            android:summary="Enter your password."
+            android:title="Password" >
+        </EditTextPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>
